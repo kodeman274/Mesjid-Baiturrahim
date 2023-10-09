@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tes {
+  background-image: url(/src/img/bg-mesjid.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* font title */
+.font-title {
+  font-family: 'Aladin', cursive;
+}
+
+nav ul li a {
+  text-decoration: none; /* Hapus garis bawah default */
+  border-bottom: 2px solid transparent; /* Garis bawah transparan */
+  transition: border-color 0.3s; /* Efek perubahan warna */
+}
+
+nav ul li a:hover {
+  border-color: orange; /* Ubah warna garis bawah saat dihover */
+}
+
+#beranda {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.borderkegiatan {
+  background-image: url(/src/img/bg-oren.png);
+}
+.footerbor {
+  background-image: url(/src/img/bgfooter.png);
+}
+
+.salam img {
+  margin: auto;
+}
+
+.submitform {
+  margin-left: 8px;
+}
+
+.showMore {
+  display: block;
+}
+/* .hidden {
+  display: block;
+} */
+
+.masjidlokasi {
+  display: none;
+}
+.lokasimesjid {
+  display: block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Montserrat:wght@600&display=swap');
+
+.fontkegiatan {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Untuk perangkat mobile */
+@media (max-width: 768px) {
+  #kegiatanContainer {
+    height: 290vh;
+  }
+  .showMore {
+    display: none;
+  }
+  .masjidlokasi {
+    display: block;
+  }
+  .lokasimesjid {
+    display: none;
+  }
+}
+
+/* Untuk layar iPad (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #kegiatanContainer {
+    height: 140vh;
+  }
+  .showMore {
+    display: none;
+  }
+  .masjidlokasi {
+    display: block;
+  }
+  .lokasimesjid {
+    display: none;
+  }
+}

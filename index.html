@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web mesjid</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon mesjid -->
+    <link
+      rel="icon"
+      href="https://github.com/kodeman274/hilmanhidayat/assets/99820483/86660b1d-8515-4290-a6a8-213b32b9985b"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aladin&family=Poppins:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper js -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="absolute inset-x-0 top-0 z-50 py-6 ba">
+      <div class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5">
+        <nav class="w-full flex justify-between gap-6 relative">
+          <!-- logo -->
+          <div class="min-w-max inline-flex relative">
+            <a href="/" class="relative flex items-center gap-3">
+              <div
+                class="inline-flex text-3xl font-semibold text-white font-title"
+              >
+                Masjid Baiturrahim
+              </div>
+            </a>
+          </div>
+
+          <div
+            data-nav-overlay
+            aria-hidden="true"
+            class="fixed hidden inset-0 lg:!hidden bg-gray-800/60 bg-opacity-50 backdrop-filter backdrop-blur-xl"
+          ></div>
+          <div
+            data-navbar
+            class="flex invisible opacity-0 translate-y-10 overflow-hidden lg:visible lg:opacity-100 lg:-translate-y-0 lg:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 lg:flex-row w-full lg:justify-between lg:items-center absolute lg:relative top-full lg:top-0 bg-slate-600 lg:!bg-transparent border-x border-x-gray-100 lg:border-x-0"
+          >
+            <ul
+              class="border-t border-gray-100 lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg text-white w-full lg:justify-end lg:items-center mr-10"
+            >
+              <li>
+                <a
+                  href="#beranda"
+                  class="duration-300 font-medium ease-linear hover:text-orange-600 py-3 active"
+                >
+                  Beranda
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#kegiatan"
+                  class="duration-300 font-medium ease-linear hover:text-orange-600 py-3"
+                >
+                  Kegiatan
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="duration-300 font-medium ease-linear hover:text-orange-600 py-3"
+                >
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="duration-300 font-medium ease-linear hover:text-orange-600 py-3"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+
+            <div
+              class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-gray-100 lg:border-0 px-6 lg:px-0"
+            >
+              <a
+                href="#"
+                class="flex justify-center items-center w-full sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-orange-600 hover:after:opacity-100 hover:after:scale-[2.5] bg-orange-500 border-transparent hover:border-[#172554]"
+              >
+                <span class="relative z-10 text-white"> Kirim Infak </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="min-w-max flex items-center gap-x-3">
+            <button
+              data-toggle-navbar
+              data-is-open="false"
+              class="lg:hidden lg:invisible outline-none w-7 h-auto flex flex-col relative"
+            >
+              <span
+                id="line-1"
+                class="w-6 h-0.5 rounded-full bg-white transition-all duration-300 ease-linear"
+              ></span>
+              <span
+                id="line-2"
+                class="w-6 origin-center mt-1 h-0.5 rounded-ful bg-white transition-all duration-300 ease-linear"
+              ></span>
+              <span
+                id="line-3"
+                class="w-6 mt-1 h-0.5 rounded-ful bg-white transition-all duration-300 ease-linear"
+              ></span>
+              <span class="sr-only">togglenav</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="h-full py-32 lg:py-36 tes" id="beranda">
+      <div
+        class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 lg:gap-12"
+      >
+        <div class="">
+          <h1
+            class="text-3xl leading-tight sm:text-4xl md:text-3xl xl:text-5xl font-bold text-white items-center text-center py-3"
+          >
+            Selamat datang di Masjid
+          </h1>
+          <h1
+            class="text-3xl leading-tight sm:text-4xl md:text-3xl xl:text-5xl font-bold text-white items-center text-center"
+          >
+            Baiturrahim
+          </h1>
+          <p
+            class="mt-8 text-slate-400 leading-tight sm:text-4xl md:text-3xl xl:text-2xl items-center text-center"
+          >
+            Tempat untuk mencari ketenangan dan mendekatkan diri kepada Allah.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="h-10 w-10 rounded-full bg-orange-500 flex fixed bottom-5 right-5 cursor-pointer"
+      >
+        <a href="#" class="text-xl m-auto">🔝</a>
+      </div>
+    </section>
+    <span class="block h-3 bg-oren"></span>
+
+    <section
+      class="grid grid-cols-1 sm:grid-cols-5 max-w-5xl -mt-24 gap-x-4 m-auto"
+    >
+      <!-- Kotak 1 -->
+      <div
+        class="bg-white h-[150px] rounded-md mx-4 border-b-8 border-oren mb-4 sm:mb-0"
+      >
+        <h2 class="text-center text-oren font-bold pt-6 text-lg sm:text-2xl">
+          Subuh
+        </h2>
+        <h3 class="text-center font-bold text-black pt-2 text-base sm:text-lg">
+          04.21
+        </h3>
+      </div>
+      <!-- Kotak 2 -->
+      <div
+        class="bg-white h-[150px] rounded-md mx-4 border-b-8 border-oren mb-4 sm:mb-0"
+      >
+        <h2 class="text-center text-oren font-bold pt-6 text-lg sm:text-2xl">
+          Zhuhur
+        </h2>
+        <h3 class="text-center font-bold text-black pt-2 text-base sm:text-lg">
+          11.44
+        </h3>
+      </div>
+      <!-- Kotak 3 -->
+      <div
+        class="bg-white h-[150px] rounded-md mx-4 border-b-8 border-oren mb-4 sm:mb-0"
+      >
+        <h2 class="text-center text-oren font-bold pt-6 text-lg sm:text-2xl">
+          Ashar
+        </h2>
+        <h3 class="text-center font-bold text-black pt-2 text-base sm:text-lg">
+          14.47
+        </h3>
+      </div>
+      <!-- Kotak 4 -->
+      <div
+        class="bg-white h-[150px] rounded-md mx-4 border-b-8 border-oren mb-4 sm:mb-0"
+      >
+        <h2 class="text-center text-oren font-bold pt-6 text-lg sm:text-2xl">
+          Magrib
+        </h2>
+        <h3 class="text-center font-bold text-black pt-2 text-base sm:text-lg">
+          17.49
+        </h3>
+      </div>
+      <!-- Kotak 5 -->
+      <div class="bg-white h-[150px] rounded-md mx-4 border-b-8 border-oren">
+        <h2 class="text-center text-oren font-bold pt-6 text-lg sm:text-2xl">
+          Isya
+        </h2>
+        <h3 class="text-center font-bold text-black pt-2 text-base sm:text-lg">
+          18.58
+        </h3>
+      </div>
+    </section>
+
+    <!-- kegiatan -->
+    <section class="h-min bg-white mb-10" id="kegiatan">
+      <div
+        class="container mx-auto bg-oren h-[449px] border shadow-lg p-10 mt-20 flex flex-col lg:flex-row items-center justify-between lg:mr-28 rounded-3xl borderkegiatan border-current"
+      >
+        <!-- Konten di Bagian Kiri -->
+        <div class="lg:w-1/2 lg:pr-4 text-center lg:text-left ml-14 mr-12">
+          <div
+            class="text-3xl sm:text-4xl md:text-3xl xl:text-5xl font-bold text-black mb-4 text-center salam mr-10"
+          >
+            <img
+              src="https://github.com/kodeman274/hilmanhidayat/assets/99820483/add0012d-9704-426a-9b23-ed0b6ff30e41"
+              alt="assalamulaikum"
+              class="-mt-10 mx-auto"
+            />
+          </div>
+          <p
+            class="text-white text-left text-base sm:text-lg mb-6 sm:px-5 py-3"
+          >
+            Di website ini Bapak/Ibu dapat melihat kegiatan
+            <span class="text-white text-base sm:text-lg mb-6">
+              - kegiatan kami dan juga bisa menyalurkan infak/Sadaqah terbaik
+              Bapak/Ibu.
+            </span>
+          </p>
+
+          <div
+            class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-gray-100 lg:border-0 px-6 lg:px-0 mx-auto"
+          >
+            <a
+              href="#"
+              class="flex justify-center items-center w-full sm:w-max px-6 h-12 rounded outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-orange-600 hover:after:opacity-100 hover:after:scale-[2.5] bg-dark border-transparent hover:border-[#172554]"
+            >
+              <span class="relative z-10 text-white"> Kirim Infak </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Gambar di Bagian Kanan -->
+        <div class="lg:w-1/2 flex justify-center mt-6 lg:mt-0">
+          <img
+            src="src/img/kumpul-mesjid.png"
+            alt="kegiatan-mesjid"
+            class="hidden lg:block w-full max-w-[390px] h-auto rounded-lg shadow-lg -mr-12"
+          />
+        </div>
+      </div>
+    </section>
+
+    <span class="block h-3 bg-oren"></span>
+    <!-- <span class="block h-4 bg-dark"></span> -->
+
+    <!-- gallery -->
+    <section class="bg-dark" id="gallery">
+      <div class="container mx-auto relative">
+        <!-- Kategori Navigasi -->
+        <ul class="flex justify-start space-x-4 py-4 border-oren relative z-30">
+          <li>
+            <a
+              href="#gallery"
+              class="kategori-link text-white hover:text-white hover:border-b-2 hover:border-oren hover:bg-oren pb-3 transition-colors duration-300 px-2 py-1 active:bg-oren"
+              >Semua</a
+            >
+          </li>
+          <li>
+            <a
+              href="#gallery"
+              class="kategori-link text-slate-400 hover:text-white hover:border-b-2 hover:border-oren hover:bg-oren pb-3 transition-colors duration-300 px-2 py-1"
+              >TPQ/TQA</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="kategori-link text-slate-400 hover:text-white hover:border-b-2 hover:border-oren hover:bg-oren pb-3 transition-colors duration-300 px-2 py-1"
+              >Pengajian</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="kategori-link text-slate-400 hover:text-white hover:border-b-2 hover:border-oren hover:bg-oren pb-3 transition-colors duration-300 px-2 py-1"
+              >Goro</a
+            >
+          </li>
+        </ul>
+        <!-- Garis Orange -->
+        <div class="absolute top-12 left-0 right-0 h-1 bg-oren"></div>
+
+        <div class="grid grid-cols-1 gap-4 mt-5 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Columns Pertama -->
+          <div>
+            <img src="src/img/image1.png" alt="Gambar 1" class="w-full mb-5" />
+            <img src="src/img/image2.png" alt="Gambar 2" class="w-full mb-5" />
+            <img src="src/img/image3.png" alt="Gambar 3" class="w-full" />
+          </div>
+
+          <!-- Columns Kedua -->
+          <div>
+            <img src="src/img/image4.png" alt="Gambar 4" class="w-full mb-5" />
+            <img src="src/img/image5.png" alt="Gambar 5" class="w-full mb-10" />
+          </div>
+
+          <!-- Columns Ketiga -->
+          <div>
+            <img src="src/img/image6.png" alt="Gambar 6" class="w-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- infak desc -->
+    <section class="h-[600px] bg-lightgreen mx-auto">
+      <div
+        class="container mx-auto my-auto h-[500px] p-10 flex flex-col lg:flex-row items-center justify-between lg:mr-28"
+      >
+        <!-- Konten di Bagian Kiri -->
+        <div class="lg:w-1/2 lg:pr-4 text-center lg:text-left ml-14 mr-12">
+          <div
+            class="text-xs sm:text-base md:text-3xl xl:text-3xl font-bold text-black mb-4 salam ml-5"
+          >
+            <h1>
+              Siapa bilang
+              <span class="text-oren sm:text-3xl md:text-3xl xl:text-5xl mb-6"
+                >harta</span
+              >
+              tak dibawa
+              <span
+                class="text-red-500 sm:text-4xl md:text-3xl xl:text-5xl mb-6"
+                >mati</span
+              >
+              ???
+            </h1>
+            <h2>Bisa kok, Sedekahin...!!!</h2>
+          </div>
+          <p
+            class="text-dark text-base text-left sm:text-base mb-6 sm:px-5 py-3"
+          >
+            “Apabila manusia itu meninggal dunia maka terputuslah segala amalnya
+            kecuali tiga: yaitu sedekah jariyah, ilmu yang bermanfaat atau anak
+            sholeh yang mendoakan kepadanya.” (HR Muslim)
+          </p>
+
+          <div
+            class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-gray-100 lg:border-0 lg:px-0 mx-auto px-6"
+          >
+            <a
+              href="#"
+              class="px-9 sm:py-4 lg:py-2 flex justify-center items-center w-full sm:w-max rounded outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-orange-700 hover:after:opacity-100 hover:after:scale-[2.5] bg-oren border-transparent hover:border-[#172554]"
+            >
+              <span class="relative z-20 text-white text-xl sm:text-base">
+                Infak Now
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Gambar di Bagian Kanan -->
+        <div class="mt-10lg:w-1/2 mt-6 lg:mt-0 flex flex-wrap relative">
+          <img
+            src="src/img/image3.png"
+            alt="kegiatan-mesjid"
+            class="hidden lg:block w-full max-w-[390px] h-[222px] rounded-2xl shadow-lg -mr-12 -pb-5 mt-28"
+          />
+          <img
+            src="src/img/infak.png"
+            alt="kegiatan-infak"
+            class="hidden lg:block w-full max-w-[390px] h-[222px] rounded-2xl shadow-lg -mr-20 ml-11 -mt-4"
+          />
+        </div>
+      </div>
+    </section>
+    <span class="block h-3 bg-oren"></span>
+
+    <!-- component -->
+    <!-- ====== Blog Section Start -->
+    <section
+      class="pt-20 pb-10 lg:pt-[120px] lg:pb-20 bg-dark"
+      id="kegiatanContainer"
+    >
+      <div class="container mx-auto -mt-10">
+        <div class="mt-10 mx-auto mb-10">
+          <h1
+            class="items-center text-center text-3xl font-bold text-white fontkegiatan"
+          >
+            KEGIATAN TERBARU
+          </h1>
+        </div>
+
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded">
+                <img
+                  src="src/img/image2.png"
+                  alt="kegiatan-1"
+                  class="w-[449px] h-[193px]"
+                />
+              </div>
+              <div>
+                <span
+                  class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                  Dec 22, 2023
+                </span>
+                <h3 class="ml-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-slate-200 hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                    Kegiatan kerja bakti lingkungan mesjid
+                  </a>
+                </h3>
+                <p class="text-body-color text-base text-slate-100 ml-5 mr-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+
+                <div
+                  class="lg:min-w-max flex sm:w-max w-full pb-6 lg:pb-0 border-gray-100 lg:border-0 lg:px-0 px-6 mt-5 ml-5"
+                >
+                  <a
+                    href="#"
+                    class="px-6 sm:py-4 lg:py-2 flex justify-center items-center w-full rounded outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-orange-700 hover:after:opacity-100 hover:after:scale-[2.5] bg-oren border-transparent hover:border-[#172554]"
+                  >
+                    <span class="relative z-20 text-white text-lg sm:text-base">
+                      Lebih Detail
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded">
+                <img src="src/img/image3.png" alt="kegiatan-2" class="w-full" />
+              </div>
+              <div>
+                <span
+                  class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                  Mar 15, 2023
+                </span>
+                <h3 class="ml-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-slate-200 hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                    Kegiatan Pemberian Sedekah di Mesjid Baiturrahim
+                  </a>
+                </h3>
+                <p class="text-slate-100 text-body-color text-base ml-5 mr-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+
+                <div
+                  class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-gray-100 lg:border-0 lg:px-0 mx-auto px-6 mt-5 ml-5"
+                >
+                  <a
+                    href="#"
+                    class="px-9 sm:py-4 lg:py-2 flex justify-center items-center w-full sm:w-max rounded outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-orange-700 hover:after:opacity-100 hover:after:scale-[2.5] bg-oren border-transparent hover:border-[#172554]"
+                  >
+                    <span class="relative z-20 text-white text-lg sm:text-base">
+                      Lebih Detail
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded">
+                <img src="src/img/image5.png" alt="kegiatan-3" class="w-full" />
+              </div>
+              <div>
+                <span
+                  class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                  Jan 05, 2023
+                </span>
+                <h3 class="ml-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-slate-200 hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                    Kegiatan Lomba MTQ di mesjid Baiturrahim
+                  </a>
+                </h3>
+                <p class="text-slate-100 text-body-color text-base ml-5 mr-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+
+                <div
+                  class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-gray-100 lg:border-0 lg:px-0 mx-auto px-6 mt-5 ml-5"
+                >
+                  <a
+                    href="#"
+                    class="px-9 sm:py-4 lg:py-2 flex justify-center items-center w-full sm:w-max rounded outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-orange-700 hover:after:opacity-100 hover:after:scale-[2.5] bg-oren border-transparent hover:border-[#172554]"
+                  >
+                    <span class="relative z-20 text-white text-lg sm:text-base">
+                      Lebih Detail
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- kegiatan2  -->
+        <div class="-mx-4 flex flex-wrap hidden">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded">
+                <img
+                  src="src/img/image2.png"
+                  alt="kegiatan-1"
+                  class="w-[449px] h-[193px]"
+                />
+              </div>
+              <div>
+                <span
+                  class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                  Dec 22, 2023
+                </span>
+                <h3 class="ml-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-slate-200 hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                    Kegiatan kerja bakti lingkungan mesjid
+                  </a>
+                </h3>
+                <p class="text-body-color text-base text-slate-100 ml-5 mr-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+
+                <div
+                  class="lg:min-w-max flex sm:w-max w-full pb-6 lg:pb-0 border-gray-100 lg:border-0 lg:px-0 px-6 mt-5 ml-5"
+                >
+                  <a
+                    href="#"
+                    class="px-6 sm:py-4 lg:py-2 flex justify-center items-center w-full rounded outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-orange-700 hover:after:opacity-100 hover:after:scale-[2.5] bg-oren border-transparent hover:border-[#172554]"
+                  >
+                    <span class="relative z-20 text-white text-lg sm:text-base">
+                      Lebih Detail
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded">
+                <img src="src/img/image3.png" alt="kegiatan-2" class="w-full" />
+              </div>
+              <div>
+                <span
+                  class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                  Mar 15, 2023
+                </span>
+                <h3 class="ml-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-slate-200 hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                    Kegiatan Pemberian Sedekah di Mesjid Baiturrahim
+                  </a>
+                </h3>
+                <p class="text-slate-100 text-body-color text-base ml-5 mr-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+
+                <div
+                  class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-gray-100 lg:border-0 lg:px-0 mx-auto px-6 mt-5 ml-5"
+                >
+                  <a
+                    href="#"
+                    class="px-9 sm:py-4 lg:py-2 flex justify-center items-center w-full sm:w-max rounded outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-orange-700 hover:after:opacity-100 hover:after:scale-[2.5] bg-oren border-transparent hover:border-[#172554]"
+                  >
+                    <span class="relative z-20 text-white text-lg sm:text-base">
+                      Lebih Detail
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded">
+                <img src="src/img/image5.png" alt="kegiatan-3" class="w-full" />
+              </div>
+              <div>
+                <span
+                  class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                  Jan 05, 2023
+                </span>
+                <h3 class="ml-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-slate-200 hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                    Kegiatan Lomba MTQ di mesjid Baiturrahim
+                  </a>
+                </h3>
+                <p class="text-slate-100 text-body-color text-base ml-5 mr-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+
+                <div
+                  class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-gray-100 lg:border-0 lg:px-0 mx-auto px-6 mt-5 ml-5"
+                >
+                  <a
+                    href="#"
+                    class="px-9 sm:py-4 lg:py-2 flex justify-center items-center w-full sm:w-max rounded outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-orange-700 hover:after:opacity-100 hover:after:scale-[2.5] bg-oren border-transparent hover:border-[#172554]"
+                  >
+                    <span class="relative z-20 text-white text-lg sm:text-base">
+                      Lebih Detail
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- kegiatan-3 -->
+        <div class="-mx-4 flex flex-wrap hidden">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded">
+                <img
+                  src="src/img/image2.png"
+                  alt="kegiatan-1"
+                  class="w-[449px] h-[193px]"
+                />
+              </div>
+              <div>
+                <span
+                  class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                  Dec 22, 2023
+                </span>
+                <h3 class="ml-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-slate-200 hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                    Kegiatan kerja bakti lingkungan mesjid
+                  </a>
+                </h3>
+                <p class="text-body-color text-base text-slate-100 ml-5 mr-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+
+                <div
+                  class="lg:min-w-max flex sm:w-max w-full pb-6 lg:pb-0 border-gray-100 lg:border-0 lg:px-0 px-6 mt-5 ml-5"
+                >
+                  <a
+                    href="#"
+                    class="px-6 sm:py-4 lg:py-2 flex justify-center items-center w-full rounded outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-orange-700 hover:after:opacity-100 hover:after:scale-[2.5] bg-oren border-transparent hover:border-[#172554]"
+                  >
+                    <span class="relative z-20 text-white text-lg sm:text-base">
+                      Lebih Detail
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded">
+                <img src="src/img/image3.png" alt="kegiatan-2" class="w-full" />
+              </div>
+              <div>
+                <span
+                  class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                  Mar 15, 2023
+                </span>
+                <h3 class="ml-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-slate-200 hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                    Kegiatan Pemberian Sedekah di Mesjid Baiturrahim
+                  </a>
+                </h3>
+                <p class="text-slate-100 text-body-color text-base ml-5 mr-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+
+                <div
+                  class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-gray-100 lg:border-0 lg:px-0 mx-auto px-6 mt-5 ml-5"
+                >
+                  <a
+                    href="#"
+                    class="px-9 sm:py-4 lg:py-2 flex justify-center items-center w-full sm:w-max rounded outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-orange-700 hover:after:opacity-100 hover:after:scale-[2.5] bg-oren border-transparent hover:border-[#172554]"
+                  >
+                    <span class="relative z-20 text-white text-lg sm:text-base">
+                      Lebih Detail
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="mx-auto mb-10 max-w-[370px]">
+              <div class="mb-8 overflow-hidden rounded">
+                <img src="src/img/image5.png" alt="kegiatan-3" class="w-full" />
+              </div>
+              <div>
+                <span
+                  class="bg-primary mb-5 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white"
+                >
+                  Jan 05, 2023
+                </span>
+                <h3 class="ml-5">
+                  <a
+                    href="javascript:void(0)"
+                    class="text-slate-200 hover:text-primary mb-4 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
+                  >
+                    Kegiatan Lomba MTQ di mesjid Baiturrahim
+                  </a>
+                </h3>
+                <p class="text-slate-100 text-body-color text-base ml-5 mr-2">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+
+                <div
+                  class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-gray-100 lg:border-0 lg:px-0 mx-auto px-6 mt-5 ml-5"
+                >
+                  <a
+                    href="#"
+                    class="px-9 sm:py-4 lg:py-2 flex justify-center items-center w-full sm:w-max rounded outline-none relative overflow-hidden border duration-300 ease-linear after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-orange-700 hover:after:opacity-100 hover:after:scale-[2.5] bg-oren border-transparent hover:border-[#172554]"
+                  >
+                    <span class="relative z-20 text-white text-lg sm:text-base">
+                      Lebih Detail
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          id="show-more"
+          class="my-4 mx-auto py-2 px-4 bg-oren text-white rounded hover:bg-orange-800 flex justify-center showMore"
+        >
+          Show More
+        </button>
+      </div>
+    </section>
+    <!-- ====== Blog Section End -->
+
+    <div class="h-[70px] bg-white"></div>
+
+    <!-- component -->
+
+    <div class="flex items-end w-full h-[400px] bg-white mt-8" id="myFooter">
+      <footer class="w-full text-white footerbor body-font" id="contact">
+        <div
+          class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap"
+        >
+          <div
+            class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left"
+          >
+            <a
+              class="flex items-center justify-center font-medium text-2xl title-font md:justify-start font-title"
+            >
+              Masjid Baiturrahim
+            </a>
+
+            <div class="mt-4">
+              <span
+                class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start"
+              >
+                <a class="text-white cursor-pointer hover:text-gray-700">
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://twitter.com/Fufa_Creative"
+                  target="_blank"
+                  class="ml-3 text-white cursor-pointer hover:text-gray-700"
+                >
+                  <svg
+                    fill="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.instagram.com/fufa.creative/"
+                  target="_blank"
+                  class="ml-3 text-white cursor-pointer hover:text-gray-700"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect
+                      width="20"
+                      height="20"
+                      x="2"
+                      y="2"
+                      rx="5"
+                      ry="5"
+                    ></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-white cursor-pointer hover:text-gray-700">
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="0"
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="none"
+                      d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                    ></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left"
+          >
+            <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2
+                class="mb-3 text-sm tracking-widest text-white uppercase title-font font-bold"
+              >
+                Beranda
+              </h2>
+              <nav class="mb-10 list-none">
+                <li class="mt-3">
+                  <a
+                    href="#kegiatan"
+                    class="text-white cursor-pointer hover:text-gray-900"
+                    >Kegiatan</a
+                  >
+                </li>
+                <li class="mt-3">
+                  <a
+                    href="#gallery"
+                    class="text-white cursor-pointer hover:text-gray-900"
+                    >Gallery</a
+                  >
+                </li>
+                <li class="mt-3">
+                  <a class="text-white cursor-pointer hover:text-gray-900"
+                    >Contact</a
+                  >
+                </li>
+              </nav>
+            </div>
+            <div class="w-full px-4 lg:w-1/3 md:w-1/2">
+              <h2
+                class="mb-3 text-sm font-bold tracking-widest text-white uppercase title-font"
+              >
+                Contact
+              </h2>
+              <nav class="mb-10 list-none">
+                <li class="mt-3">
+                  <a class="text-white cursor-pointer hover:text-gray-900"
+                    >0858-8269-5182</a
+                  >
+                </li>
+                <li class="mt-3">
+                  <a class="text-white cursor-pointer hover:text-gray-900"
+                    >@baiturrahim23</a
+                  >
+                </li>
+                <li class="mt-3">
+                  <a class="text-white cursor-pointer hover:text-gray-900"
+                    >Masjid-baiturrahim</a
+                  >
+                </li>
+                <li class="mt-3">
+                  <a class="text-white cursor-pointer hover:text-gray-900"
+                    >m.baiturrahim@gmail.com</a
+                  >
+                </li>
+              </nav>
+            </div>
+            <div class="w-full px-2 lg:w-1/4 md:w-1/2">
+              <h2
+                class="mb-3 text-sm font-bold tracking-widest text-white uppercase title-font"
+              >
+                Lokasi Mesjid
+              </h2>
+              <nav class="mb-10 list-none">
+                <li class="mt-3">
+                  <a
+                    href="https://maps.app.goo.gl/GmGGEPwRKzJqq3Vb8"
+                    class="text-white cursor-pointer hover:text-gray-900"
+                    target="_blank"
+                    rel="no-referrer"
+                    ><img
+                      src="src/img/lokasi.png"
+                      class="w-full h-[161px] masjidlokasi"
+                      alt=""
+                    /><iframe
+                      class="lokasimesjid"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15861.592754262096!2d106.86485383955076!3d-6.342446799999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ece3e472ad21%3A0xe5679305005a6db9!2sMasjid%20Baiturrahim!5e0!3m2!1sid!2sid!4v1696818197464!5m2!1sid!2sid"
+                      width="400"
+                      height="161"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </a>
+                </li>
+              </nav>
+            </div>
+            <!-- <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+              <h2
+                class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font"
+              >
+                Contact
+              </h2>
+              <nav class="mb-10 list-none">
+                <li class="mt-3">
+                  <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                    >Send a Message</a
+                  >
+                </li>
+                <li class="mt-3">
+                  <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                    >Request a Quote</a
+                  >
+                </li>
+                <li class="mt-3">
+                  <a class="text-gray-500 cursor-pointer hover:text-gray-900"
+                    >+123-456-7890</a
+                  >
+                </li>
+              </nav>
+            </div> -->
+          </div>
+        </div>
+        <span class="block h-1 bg-white"></span>
+        <div class="footerbor">
+          <div class="container px-5 py-4 mx-auto">
+            <p class="text-sm text-white capitalize xl:text-center">
+              © 2023 Designed & Developed By: Fufa-Creative
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <style>
+      body {
+        font-family: 'monserrat', sans-serif;
+      }
+
+      button[data-toggle-navbar][data-is-open='true'] #line-1 {
+        transform: translateY(0.375rem) rotate(40deg);
+      }
+
+      button[data-toggle-navbar][data-is-open='true'] #line-2 {
+        transform: scaleX(0);
+        opacity: 0;
+      }
+
+      button[data-toggle-navbar][data-is-open='true'] #line-3 {
+        transform: translateY(-0.375rem) rotate(-40deg);
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      const btnHumb = document.querySelector('[data-toggle-navbar]');
+      const navbar = document.querySelector('[data-navbar]');
+      const overlay = document.querySelector('[data-nav-overlay]');
+      if (btnHumb && navbar) {
+        const toggleBtnAttr = () => {
+          const isOpen = btnHumb.getAttribute('data-is-open');
+          btnHumb.setAttribute(
+            'data-is-open',
+            isOpen === 'true' ? 'false' : 'true'
+          );
+          if (isOpen === 'false') {
+            overlay.classList.toggle('hidden');
+          } else {
+            overlay.classList.add('hidden');
+          }
+        };
+        btnHumb.addEventListener('click', () => {
+          navbar.classList.toggle('invisible');
+          navbar.classList.toggle('opacity-0');
+          navbar.classList.toggle('translate-y-10');
+          toggleBtnAttr();
+        });
+
+        overlay.addEventListener('click', () => {
+          navbar.classList.add('invisible');
+          navbar.classList.add('opacity-0');
+          navbar.classList.add('translate-y-10');
+          toggleBtnAttr();
+        });
+      }
+
+      //   mengatur saat klik hover active
+      // Mengambil semua elemen kategori-link
+      const kategoriLinks = document.querySelectorAll('.kategori-link');
+
+      // Mengatur latar belakang oranye untuk elemen "Semua"
+      kategoriLinks[1].classList.add('active');
+
+      // Menambahkan event listener untuk mengatur latar belakang saat diklik
+      kategoriLinks.forEach((link, index) => {
+        link.addEventListener('click', () => {
+          // Menghapus kelas 'active' dari semua link kategori
+          kategoriLinks.forEach((kategoriLink) => {
+            kategoriLink.classList.remove('active');
+          });
+
+          // Menambahkan kelas 'active' hanya pada link yang diklik
+          link.classList.add('active');
+        });
+      });
+
+      //   mengatur show more content
+
+      const showMoreButton = document.getElementById('show-more');
+      const hiddenKegiatan = document.querySelectorAll('.hidden');
+      let showingAll = false;
+
+      showMoreButton.addEventListener('click', () => {
+        if (!showingAll) {
+          hiddenKegiatan.forEach((kegiatan) => {
+            kegiatan.classList.remove('hidden');
+          });
+          showMoreButton.textContent = 'Show Less';
+        } else {
+          hiddenKegiatan.forEach((kegiatan) => {
+            kegiatan.classList.add('hidden');
+          });
+          showMoreButton.textContent = 'Show More';
+        }
+        showingAll = !showingAll;
+      });
+
+      //   mengatur layar pada section kegiatan
+      //   function setSectionHeight() {
+      //     const section = document.getElementById('mySection');
+      //     const isMobile = window.innerWidth <= 768; // Ganti dengan breakpoint sesuai kebutuhan Anda
+
+      //     if (isMobile) {
+      //       section.style.height = '2300px';
+      //     } else {
+      //       section.style.height = '100vh'; // h-screen
+      //     }
+      //   }
+
+      // Panggil fungsi saat halaman dimuat dan saat layar berubah ukuran
+      //   window.addEventListener('load', setSectionHeight);
+      //   window.addEventListener('resize', setSectionHeight);
+      //   mengatur active saat dihover
+      //    // Dapatkan URL saat ini
+      //    const currentURL = window.location.href;
+
+      // // Loop melalui semua tautan di navigasi
+      // const navLinks = document.querySelectorAll('nav ul li a');
+      // navLinks.forEach((link) => {
+      // // Bandingkan URL saat ini dengan URL tautan
+      // if (currentURL === link.href) {
+      //     // Jika sesuai, tambahkan kelas 'active' atau atur gaya lain
+      //     link.classList.add('active');
+      // }
+      // });
+    </script>
+  </body>
+</html>

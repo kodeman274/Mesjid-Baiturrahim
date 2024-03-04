@@ -1,16 +1,12 @@
-<<<<<<< Updated upstream
-
 # Mesjid-Baiturrahim web
 
 # Demo web
 
 # <img width="528" alt="Screenshot 2023-10-12 at 21 52 10" src="https://github.com/kodeman274/Mesjid-Baiturrahim/assets/99820483/cfc10838-16e4-49f3-93a0-c4ca5e260f81">
 
+## [link][https://masjid-baiturrahim.netlify.app/]
+
 # Mesjid-Baiturrahim
-
-> > > > > > > Stashed changes
-
-Welcome to the Web Mesjid documentation! This web application is designed to serve as a platform for documenting the activities of the Mesjid and providing valuable information for the local community.
 
 ## Table of Contents
 
@@ -29,8 +25,6 @@ Welcome to the Web Mesjid documentation! This web application is designed to ser
 - [License](#license)
 
 ## Introduction
-
-> > > > > > > Stashed changes
 
 The Web Mesjid project is developed to facilitate the documentation of Mesjid activities and make it easy for the local community to access information and contribute to charitable activities.
 
@@ -66,25 +60,6 @@ The Web Mesjid includes the following features:
   </li>
 </ul>
 =======
-## Getting Started
-
-To run this project locally, follow these steps:
-
-1. Clone this repository to your local machine:
-
-   ```bash
-   git clone https://github.com/your-username/web-mesjid.git
-   Install the required dependencies:
-   bash
-   Copy code
-   cd web-mesjid
-   npm install
-   Start the development server:
-   bash
-   Copy code
-   npm run dev
-   Your Web Mesjid app should now be running locally.
-   ```
 
 Usage
 
@@ -95,5 +70,3 @@ Navigate to the "Kegiatan" section to view recent activities and their details.
 Explore the "Gallery" to see images from past events.
 Check the "Jadwal Solat" section for daily prayer schedules.
 Find the contact details for inquiries or contributions.
-
-> > > > > > > Stashed changes

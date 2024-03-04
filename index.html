@@ -147,12 +147,6 @@
           </p>
         </div>
       </div>
-
-      <div
-        class="h-10 w-10 rounded-full bg-orange-500 flex fixed bottom-5 right-5 cursor-pointer"
-      >
-        <a href="#" class="text-xl m-auto">🔝</a>
-      </div>
     </section>
     <span class="block h-3 bg-oren"></span>
 
@@ -410,7 +404,7 @@
                 <img
                   src="src/img/image2.png"
                   alt="kegiatan-1"
-                  class="w-[449px] h-[193px]"
+                  class="w-[449px] h-[193px] border-2 border-teal-300"
                 />
               </div>
               <div>
@@ -1014,23 +1008,29 @@
           </div>
         </div>
       </footer>
+
+      <div
+        class="h-10 w-10 rounded-full bg-orange-500 flex fixed bottom-5 right-5 cursor-pointer back-top border-2 border-white"
+      >
+        <a href="#" class="text-xl flex justify-center items-center mt-1">🔝</a>
+      </div>
     </div>
 
     <style>
       body {
-        font-family: 'monserrat', sans-serif;
+        font-family: "monserrat", sans-serif;
       }
 
-      button[data-toggle-navbar][data-is-open='true'] #line-1 {
+      button[data-toggle-navbar][data-is-open="true"] #line-1 {
         transform: translateY(0.375rem) rotate(40deg);
       }
 
-      button[data-toggle-navbar][data-is-open='true'] #line-2 {
+      button[data-toggle-navbar][data-is-open="true"] #line-2 {
         transform: scaleX(0);
         opacity: 0;
       }
 
-      button[data-toggle-navbar][data-is-open='true'] #line-3 {
+      button[data-toggle-navbar][data-is-open="true"] #line-3 {
         transform: translateY(-0.375rem) rotate(-40deg);
       }
     </style>
@@ -1038,74 +1038,90 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script>
-      const btnHumb = document.querySelector('[data-toggle-navbar]');
-      const navbar = document.querySelector('[data-navbar]');
-      const overlay = document.querySelector('[data-nav-overlay]');
+      // Ambil elemen tombol "back to top"
+      const backButton = document.querySelector(".back-top");
+
+      // Fungsi untuk menampilkan atau menyembunyikan tombol berdasarkan posisi scroll
+      function toggleBackToTopButton() {
+        if (window.scrollY > 300) {
+          // Ubah nilai 300 sesuai dengan tinggi section home
+          backButton.style.display = "block";
+        } else {
+          backButton.style.display = "none";
+        }
+      }
+
+      // Event listener untuk mendengarkan event scroll
+      window.addEventListener("scroll", toggleBackToTopButton);
+
+      const btnHumb = document.querySelector("[data-toggle-navbar]");
+      const navbar = document.querySelector("[data-navbar]");
+      const overlay = document.querySelector("[data-nav-overlay]");
       if (btnHumb && navbar) {
         const toggleBtnAttr = () => {
-          const isOpen = btnHumb.getAttribute('data-is-open');
+          const isOpen = btnHumb.getAttribute("data-is-open");
           btnHumb.setAttribute(
-            'data-is-open',
-            isOpen === 'true' ? 'false' : 'true'
+            "data-is-open",
+            isOpen === "true" ? "false" : "true"
           );
-          if (isOpen === 'false') {
-            overlay.classList.toggle('hidden');
+          if (isOpen === "false") {
+            overlay.classList.toggle("hidden");
           } else {
-            overlay.classList.add('hidden');
+            overlay.classList.add("hidden");
           }
         };
-        btnHumb.addEventListener('click', () => {
-          navbar.classList.toggle('invisible');
-          navbar.classList.toggle('opacity-0');
-          navbar.classList.toggle('translate-y-10');
+        btnHumb.addEventListener("click", () => {
+          navbar.classList.toggle("invisible");
+          navbar.classList.toggle("opacity-0");
+          navbar.classList.toggle("translate-y-10");
           toggleBtnAttr();
         });
 
-        overlay.addEventListener('click', () => {
-          navbar.classList.add('invisible');
-          navbar.classList.add('opacity-0');
-          navbar.classList.add('translate-y-10');
+        overlay.addEventListener("click", () => {
+          navbar.classList.add("invisible");
+          navbar.classList.add("opacity-0");
+          navbar.classList.add("translate-y-10");
           toggleBtnAttr();
         });
       }
 
       //   mengatur saat klik hover active
       // Mengambil semua elemen kategori-link
-      const kategoriLinks = document.querySelectorAll('.kategori-link');
+      const kategoriLinks = document.querySelectorAll(".kategori-link");
 
       // Mengatur latar belakang oranye untuk elemen "Semua"
-      kategoriLinks[1].classList.add('active');
+      kategoriLinks[1].classList.add("active");
 
       // Menambahkan event listener untuk mengatur latar belakang saat diklik
       kategoriLinks.forEach((link, index) => {
-        link.addEventListener('click', () => {
+        link.addEventListener("click", () => {
           // Menghapus kelas 'active' dari semua link kategori
           kategoriLinks.forEach((kategoriLink) => {
-            kategoriLink.classList.remove('active');
+            kategoriLink.classList.remove("active");
           });
 
           // Menambahkan kelas 'active' hanya pada link yang diklik
-          link.classList.add('active');
+          link.classList.add("active");
         });
       });
 
       //   mengatur show more content
 
-      const showMoreButton = document.getElementById('show-more');
-      const hiddenKegiatan = document.querySelectorAll('.hidden');
+      const showMoreButton = document.getElementById("show-more");
+      const hiddenKegiatan = document.querySelectorAll(".hidden");
       let showingAll = false;
 
-      showMoreButton.addEventListener('click', () => {
+      showMoreButton.addEventListener("click", () => {
         if (!showingAll) {
           hiddenKegiatan.forEach((kegiatan) => {
-            kegiatan.classList.remove('hidden');
+            kegiatan.classList.remove("hidden");
           });
-          showMoreButton.textContent = 'Show Less';
+          showMoreButton.textContent = "Show Less";
         } else {
           hiddenKegiatan.forEach((kegiatan) => {
-            kegiatan.classList.add('hidden');
+            kegiatan.classList.add("hidden");
           });
-          showMoreButton.textContent = 'Show More';
+          showMoreButton.textContent = "Show More";
         }
         showingAll = !showingAll;
       });

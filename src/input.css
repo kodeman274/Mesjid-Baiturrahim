@@ -58,6 +58,10 @@ nav ul li a:hover {
   display: block;
 }
 
+.coba {
+  background-image: url(img/aset1.jpg);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Montserrat:wght@600&display=swap');
 
 .fontkegiatan {
@@ -94,4 +98,19 @@ nav ul li a:hover {
   .lokasimesjid {
     display: none;
   }
+}
+
+@layer components {
+  .grid-card {
+    @apply bg-blue-500  aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden relative hover:scale-95 transition-all duration-500;
+  }
+
+  .grid-card-img {
+    @apply w-full h-full bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500;
+  }
+}
+
+/* latian */
+.latar1 {
+  background-image: url('https://github.com/kodeman274/Mesjid-Baiturrahim/assets/99820483/c535425e-84f1-4e15-bfa8-24d372b1846b');
 }
